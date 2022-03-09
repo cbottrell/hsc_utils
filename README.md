@@ -2,7 +2,14 @@
 
 A collection of python tools for acquiring catalogue and image data from the HSC data archive server (DAS) and SQL Catalogue Archive Server (CAS).
  
-The package can be copied to the site-packages directory of your python/conda environment or kept in your working directory. The package includes 3 core data acquisition tools: hsc_image, hsc_psf, and hsc_sql. Each requires that the following environment variables are set to your STARS account info (e.g. in ~/.bash_profile):
+The package can be copied to the site-packages directory of your python/conda environment. 
+
+```
+cd $CONDA_PREFIX/lib/pythonX.x/site-packages
+git clone https://github.com/cbottrell/hsc_utils.git
+```
+
+The package includes three core data acquisition tools: hsc_image, hsc_psf, and hsc_sql. Each requires that the following environment variables are set to your STARS account info (e.g. in ~/.bash_profile):
 ```
 export SSP_IDR_USR='STARS_USRNAME'
 export SSP_IDR_PWD='STARS_PASSWRD'
