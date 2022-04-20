@@ -17,7 +17,7 @@ def make_psf_list(object_id,ra,dec,tmp_dir,dr='dr3',rerun='s20a_wide',filters='G
     for filt in filters:
         if filt in ['G','R','I','Z','Y']:
             filt = filt.lower()
-        row = f" {ra} {dec} {rerun} {filt} coadd true # {object_id}"
+        row = f" {ra} {dec} {rerun} {filt} coadd false # {object_id}"
         das_list.append(row)
 
     psf_list = f"{tmp_dir}/{object_id}_psflist.txt"
